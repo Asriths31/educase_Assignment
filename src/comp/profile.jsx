@@ -12,11 +12,11 @@ function Profile(){
         <div className="main-body profile">
             <header>
                 <p>Account Settings</p>
-              <Link to="/"><img src={signOutIcon}></img></Link>
+              <Link to="/"><img src={signOutIcon} title="home" alt="/home"></img></Link>
             </header>
             <div className="profile-div">
                 <div className="logo">
-                    <img src={userLogo}></img>
+                    <img src={userLogo} alt="Profile-Image"></img>
                     <img src={cameraIcon} className="icon"></img>
                 </div>
                 <div className="info">

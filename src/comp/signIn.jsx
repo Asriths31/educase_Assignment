@@ -24,7 +24,7 @@ function SignIn(){
 
     return(
         <div className="main-body sign-in">
-                          <Link to="/"><img className="sign-out-icon" src={signOutIcon}></img></Link>
+                          <Link to="/"><img className="sign-out-icon" src={signOutIcon} title="home" alt="/home"></img></Link>
 
             <div className="info-text">
                 <p id="sign-in-text">Signin to your<br></br> PopX account </p>

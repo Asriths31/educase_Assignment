@@ -27,7 +27,7 @@ function SignUp(){
 
     return(
         <div className="main-body sign-up">
-            <Link to="/"><img className="sign-out-icon" src={signOutIcon}></img></Link>
+            <Link to="/"><img className="sign-out-icon" src={signOutIcon} title="home" alt="/home"></img></Link>
             <div className="info-text">
                 <p id="sign-in-text">Create your<br></br> PopX account </p>
                 {isErr&&<p id="err-msg">Please Enter All Details</p>}
