@@ -30,8 +30,12 @@ function SignUp(){
             <Link to="/"><img className="sign-out-icon" src={signOutIcon} title="home" alt="/home"></img></Link>
             <div className="info-text">
                 <p id="sign-in-text">Create your<br></br> PopX account </p>
-                {isErr&&<p id="err-msg">Please Enter All Details</p>}
-
+<p 
+                id="err-msg"
+                style={{
+                    visibility:isErr?"visible":"hidden"
+                }}
+                >Please Enter All Details</p>
             </div>
             <div className="action-div">
                 <SearchInput 

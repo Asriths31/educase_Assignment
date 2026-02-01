@@ -29,7 +29,12 @@ function SignIn(){
             <div className="info-text">
                 <p id="sign-in-text">Signin to your<br></br> PopX account </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-                {isErr&&<p id="err-msg">Please Enter All Details</p>}
+                <p 
+                id="err-msg"
+                style={{
+                    visibility:isErr?"visible":"hidden"
+                }}
+                >Please Enter All Details</p>
 
             </div>
            <div className="action-div">
