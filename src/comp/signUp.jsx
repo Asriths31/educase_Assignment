@@ -56,13 +56,12 @@ function SignUp(){
 
                 />
                 <SearchInput 
-                  label="Email adress"
-                  placeholder="Enter your email adress"
+                  label="Email address"
+                  placeholder="Enter your email address"
                   type="text"
                   value={email}
                   setValue={setEmail}
-                                    isRequired={true}
-
+                  isRequired={true}
                 />
                 <SearchInput 
                   label="Password"
@@ -70,8 +69,7 @@ function SignUp(){
                   type="password"
                   value={password}
                   setValue={setPassword}
-                                    isRequired={true}
-
+                  isRequired={true}
                 />
                 <SearchInput 
                   label="Company name"
@@ -79,30 +77,28 @@ function SignUp(){
                   type="text"
                   value={companyName}
                   setValue={setCompanyName}
-                                    isRequired={false}
-
+                  isRequired={false}
                 />
                 <p>Are you an Agency?<span className="required">*</span></p>
                 <div className="radio-action">
                     <div> 
                         <input 
                         type="radio"
-                        name="yes"
-                        checked={isAgency}
-                        onChange={()=>setIsAgency(prev=>!prev)}
+                        name="isAgency"
+                        checked={isAgency === true}
+                        onChange={()=>setIsAgency(true)}
                         />
                         <label>Yes</label>
                     </div>
                     <div>
                         <input 
                         type="radio"
-                        name="no"
-                        checked={!isAgency}
-                        onChange={()=>setIsAgency(prev=>!prev)}
+                        name="isAgency"
+                        checked={isAgency === false}
+                        onChange={()=>setIsAgency(false)}
                         />
                         <label>No</label>
                     </div>
-                    
                 </div>
 
             </div>

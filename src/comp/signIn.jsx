@@ -36,10 +36,9 @@ function SignIn(){
                 }}
                 >Please Enter All Details</p>
 
-            </div>
-           <div className="action-div">
-                <SearchInput 
-                  label="Email"
+            </div>            <div className="action-div">
+                 <SearchInput 
+                  label="Email Address"
                   placeholder="Enter email address"
                   type="text"
                   value={email}
@@ -55,7 +54,12 @@ function SignIn(){
                   isRequired={false}
                 />
                 
-                <button onClick={handleLogin}>Login</button>
+                <button 
+                  onClick={handleLogin} 
+                  className={email && password ? "active" : ""}
+                >
+                  Login
+                </button>
 
             </div> 
         </div>

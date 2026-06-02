@@ -6,7 +6,7 @@ import signOutIcon from "../assets/house-regular-full.svg"
 import { Link } from "react-router"
 function Profile(){
 
-    const{userName,email}=useContext(UserContext)
+    const { userName, email, phoneNo, companyName, isAgency } = useContext(UserContext)
 
     return(
         <div className="main-body profile">
@@ -27,6 +27,21 @@ function Profile(){
             <p>
                 Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
             </p>
+            <hr className="profile-details-separator" />
+            <div className="user-details-list">
+                <div className="detail-item">
+                    <span className="detail-label">Phone Number</span>
+                    <span className="detail-value">{phoneNo ?? "9999999999"}</span>
+                </div>
+                <div className="detail-item">
+                    <span className="detail-label">Company Name</span>
+                    <span className="detail-value">{companyName ?? "PopX Agency"}</span>
+                </div>
+                <div className="detail-item">
+                    <span className="detail-label">Agency Status</span>
+                    <span className="detail-value">{isAgency ? "Yes" : "No"}</span>
+                </div>
+            </div>
         </div>
     )
 }
